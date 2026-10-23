@@ -1,0 +1,30 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shreyadewalkar28/TRINETRA-AI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shreyadewalkar28/TRINETRA-AI/issues"
+  },
+  "homepage": "https://github.com/Shreyadewalkar28/TRINETRA-AI#readme",
+  "dependencies": {
+    "@vitejs/plugin-react": "^6.1.1",
+    "leaflet": "^1.9.4",
+    "lucide-react": "^1.48.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "vite": "^8.3.1"
+  }
+}

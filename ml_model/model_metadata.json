@@ -1,0 +1,27 @@
+{
+  "model_type": "RandomForestClassifier",
+  "num_classes": 5,
+  "classes": {
+    "0": "SAFE",
+    "1": "VOICE_DISTRESS",
+    "2": "HIGH_HEART_RATE",
+    "3": "GEOFENCE_BREACH",
+    "4": "CRITICAL_EMERGENCY"
+  },
+  "features": [
+    "profile",
+    "heart_rate",
+    "voice_status",
+    "geofence_status"
+  ],
+  "accuracy": 1.0,
+  "voice_alert_trigger": "VOICE_DISTRESS",
+  "voice_keywords": [
+    "help me",
+    "distress",
+    "scream",
+    "bachao",
+    "emergency",
+    "panic"
+  ]
+}

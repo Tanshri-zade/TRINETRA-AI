@@ -1,0 +1,949 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+
+:root {
+  /* PAGE */
+  --bg-primary: #F7F5FA;
+  --bg-secondary: #F0EBF7;
+
+  /* SIDEBAR */
+  --sidebar-bg: #1D0A46;
+  --sidebar-hover: #35205D;
+  --sidebar-active: #412568;
+
+  /* CARDS */
+  --bg-card: #EDE4F6;
+  --bg-card-hover: #E8DCF3;
+  --bg-glass: #EDE4F6;
+
+  /* SMALL INNER CARDS */
+  --inner-card: #F8F5FB;
+
+  /* MAIN PURPLE */
+  --primary: #604B86;
+  --primary-dark: #3D2C63;
+  --primary-soft: #D9C9EB;
+
+  /* COMPATIBILITY */
+  --accent-cyan: #604B86;
+  --accent-blue: #604B86;
+  --accent-indigo: #604B86;
+
+  --navy: #3D2C63;
+  --dark-navy: #25173F;
+
+  --teal: #604B86;
+  --dark-teal: #3D2C63;
+  --light-teal: #E9E0F3;
+
+  /* TEXT */
+  --text-primary: #2C2733;
+  --text-secondary: #68616F;
+  --text-muted: #91899A;
+
+  /* BORDER */
+  --border-color: #DED4E8;
+  --border-focus: #765E9B;
+
+  /* REAL STATUS ONLY */
+  --accent-rose: #C85C65;
+  --accent-emerald: #4D9A72;
+  --accent-amber: #C39443;
+
+  --danger-bg: #F8E6E8;
+  --safe-bg: #E6F3EB;
+  --warning-bg: #FAF1DD;
+
+  /* SHADOW */
+  --shadow-sm:
+    0 2px 8px rgba(48, 31, 72, 0.06);
+
+  --shadow-md:
+    0 5px 16px rgba(48, 31, 72, 0.09);
+
+  --shadow-lg:
+    0 12px 30px rgba(48, 31, 72, 0.12);
+
+  /* SHAPE */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-full: 999px;
+
+  /* FONT */
+  --font-main:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+  --font-heading:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Arial,
+    sans-serif;
+}
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+[data-theme="dark"] {
+  /* PAGE */
+  --bg-primary: #15111B;
+  --bg-secondary: #1D1725;
+
+  /* SIDEBAR */
+  --sidebar-bg: #130A22;
+  --sidebar-hover: #291B3A;
+  --sidebar-active: #3A2850;
+
+  /* CARDS */
+  --bg-card: #241C2D;
+  --bg-card-hover: #2C2237;
+  --bg-glass: #241C2D;
+
+  /* SMALL INNER CARDS */
+  --inner-card: #1C1623;
+
+  /* MAIN PURPLE */
+  --primary: #9A7DBB;
+  --primary-dark: #80639F;
+  --primary-soft: #3A2C48;
+
+  /* COMPATIBILITY */
+  --accent-cyan: #9A7DBB;
+  --accent-blue: #9A7DBB;
+  --accent-indigo: #9A7DBB;
+
+  --navy: #B59ACA;
+  --dark-navy: #120C18;
+
+  --teal: #9A7DBB;
+  --dark-teal: #80639F;
+  --light-teal: #30263B;
+
+  /* TEXT */
+  --text-primary: #F4EFF7;
+  --text-secondary: #C8BDCF;
+  --text-muted: #9E92A8;
+
+  /* BORDER */
+  --border-color: #40344B;
+  --border-focus: #A98BC7;
+
+  /* STATUS */
+  --accent-rose: #F17885;
+  --accent-emerald: #66C895;
+  --accent-amber: #E0B35E;
+
+  --danger-bg: #3B2229;
+  --safe-bg: #1F352B;
+  --warning-bg: #3A3020;
+
+  /* SHADOW */
+  --shadow-sm:
+    0 2px 8px rgba(0, 0, 0, 0.20);
+
+  --shadow-md:
+    0 6px 18px rgba(0, 0, 0, 0.28);
+
+  --shadow-lg:
+    0 12px 30px rgba(0, 0, 0, 0.36);
+}
+
+
+/* =========================================================
+   DARK MODE - GLOBAL FIXES
+========================================================= */
+
+[data-theme="dark"] body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .app-container {
+  background: var(--bg-primary);
+}
+
+[data-theme="dark"] .main-viewport {
+  background:
+    linear-gradient(
+      135deg,
+      #17121D 0%,
+      #1E1726 100%
+    );
+}
+
+
+/* =========================================================
+   DARK MODE - CARDS
+========================================================= */
+
+[data-theme="dark"] .glass-panel {
+  background:
+    linear-gradient(
+      145deg,
+      #282031,
+      #211A29
+    );
+
+  color: var(--text-primary);
+
+  border:
+    1px solid var(--border-color);
+
+  box-shadow:
+    0 5px 16px rgba(0, 0, 0, 0.24);
+}
+
+[data-theme="dark"] .glass-panel:hover {
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.30);
+}
+
+
+/* =========================================================
+   DARK MODE - TEXT
+========================================================= */
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6 {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .normal-text {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .secondary-text {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .muted-text {
+  color: var(--text-muted);
+}
+
+
+/* =========================================================
+   DARK MODE - INPUTS
+========================================================= */
+
+[data-theme="dark"] input,
+[data-theme="dark"] select,
+[data-theme="dark"] textarea {
+  background: #211A29;
+
+  color: var(--text-primary);
+
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] input::placeholder,
+[data-theme="dark"] textarea::placeholder {
+  color: var(--text-muted);
+}
+
+[data-theme="dark"] input:focus,
+[data-theme="dark"] select:focus,
+[data-theme="dark"] textarea:focus {
+  border-color: #A98BC7;
+
+  box-shadow:
+    0 0 0 2px rgba(169, 139, 199, 0.15);
+}
+
+[data-theme="dark"] select option {
+  background: #211A29;
+  color: #F4EFF7;
+}
+
+
+/* =========================================================
+   DARK MODE - BUTTONS
+========================================================= */
+
+[data-theme="dark"] .btn-primary {
+  background: #765A96;
+
+  color: #FFFFFF;
+
+  border-color: #80639F;
+}
+
+[data-theme="dark"] .btn-primary:hover {
+  background: #8668A7;
+
+  border-color: #9475B5;
+}
+
+[data-theme="dark"] .btn-secondary {
+  background: #2B2234;
+
+  color: #E9DFF0;
+
+  border-color: #493B56;
+}
+
+[data-theme="dark"] .btn-secondary:hover {
+  background: #352940;
+
+  border-color: #5A4969;
+}
+
+
+/* =========================================================
+   DARK MODE - STATUS
+========================================================= */
+
+[data-theme="dark"] .badge-rose,
+[data-theme="dark"] .status-danger {
+  background: #3B2229;
+
+  color: #FF9BA7;
+
+  border-color: #61333D;
+}
+
+[data-theme="dark"] .badge-emerald,
+[data-theme="dark"] .status-safe {
+  background: #1F352B;
+
+  color: #7DDAA9;
+
+  border-color: #315A46;
+}
+
+[data-theme="dark"] .badge-amber,
+[data-theme="dark"] .status-warning {
+  background: #3A3020;
+
+  color: #EAC67A;
+
+  border-color: #5C4A2B;
+}
+
+[data-theme="dark"] .badge-cyan,
+[data-theme="dark"] .status-info {
+  background: #352942;
+
+  color: #C7ADDD;
+
+  border-color: #514061;
+}
+
+
+/* =========================================================
+   DARK MODE - TABLE
+========================================================= */
+
+[data-theme="dark"] table {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] thead {
+  color: #D8C9E5;
+}
+
+[data-theme="dark"] tbody tr:hover {
+  background:
+    rgba(154, 125, 187, 0.08);
+}
+
+
+/* =========================================================
+   DARK MODE - MAP CONTAINER
+========================================================= */
+
+[data-theme="dark"] .leaflet-container {
+  border-color: var(--border-color);
+}
+
+
+/* =========================================================
+   DARK MODE - SCROLLBAR
+========================================================= */
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: #51445C;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+  background: #675673;
+}
+
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+  font-family: var(--font-main);
+}
+
+body {
+  margin: 0;
+
+  font-family: var(--font-main);
+
+  background: var(--bg-primary);
+
+  color: var(--text-primary);
+
+  font-size: 14px;
+
+  line-height: 1.45;
+
+  letter-spacing: 0;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* =========================================================
+   FORM ELEMENT FONT
+========================================================= */
+
+button,
+input,
+select,
+textarea {
+  font-family: var(--font-main);
+  letter-spacing: 0;
+}
+
+
+/* =========================================================
+   HEADINGS
+========================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+
+  color: var(--text-primary);
+
+  letter-spacing: -0.01em;
+
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 1.45rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 0.92rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   NORMAL TEXT
+========================================================= */
+
+p,
+span,
+div,
+label {
+  font-family: var(--font-main);
+}
+
+p {
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+small {
+  font-family: var(--font-main);
+  font-weight: 400;
+}
+
+.normal-text {
+  color: var(--text-primary);
+}
+
+.secondary-text {
+  color: var(--text-secondary);
+}
+
+.muted-text {
+  color: var(--text-muted);
+}
+
+
+/* =========================================================
+   APP
+========================================================= */
+
+.app-container {
+  display: flex;
+
+  min-height: 100vh;
+
+  background: var(--bg-primary);
+}
+
+.main-viewport {
+  flex: 1;
+
+  min-width: 0;
+
+  height: 100vh;
+
+  overflow-y: auto;
+
+  background:
+    linear-gradient(
+      135deg,
+      #FAF9FC 0%,
+      #F5F1F9 100%
+    );
+}
+
+.content-area {
+  width: 100%;
+
+  max-width: 1450px;
+
+  margin: 0 auto;
+
+  padding:
+    1.6rem
+    2rem
+    3rem;
+}
+
+
+/* =========================================================
+   CARDS
+========================================================= */
+
+.glass-panel {
+  background:
+    linear-gradient(
+      145deg,
+      #F0E8F7,
+      #EAE0F4
+    );
+
+  color: var(--text-primary);
+
+  border:
+    1px solid rgba(
+      106,
+      80,
+      139,
+      0.08
+    );
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 5px 15px
+    rgba(54, 34, 79, 0.07);
+
+  backdrop-filter: none;
+
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.glass-panel:hover {
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 7px 18px
+    rgba(54, 34, 79, 0.09);
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+button {
+  font-weight: 500;
+}
+
+.btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 0.4rem;
+
+  min-height: 34px;
+
+  padding:
+    0.48rem
+    0.85rem;
+
+  border-radius: 8px;
+
+  font-size: 0.76rem;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.18s ease,
+    border-color 0.18s ease,
+    color 0.18s ease,
+    box-shadow 0.18s ease,
+    transform 0.18s ease;
+}
+
+.btn-primary {
+  background: #604B86;
+
+  color: #FFFFFF;
+
+  border:
+    1px solid #604B86;
+}
+
+.btn-primary:hover {
+  background: #4E3B72;
+
+  border-color: #4E3B72;
+}
+
+.btn-secondary {
+  background: #F8F5FB;
+
+  color: #3D2C63;
+
+  border:
+    1px solid #D8CDE3;
+}
+
+.btn-secondary:hover {
+  background: #EEE6F5;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+/* ACTIVE / SOS */
+
+.badge-rose,
+.status-danger {
+  background: #F8E6E8;
+
+  color: #B64C55;
+
+  border:
+    1px solid #EDC8CC;
+}
+
+
+/* RESOLVED / SAFE */
+
+.badge-emerald,
+.status-safe {
+  background: #E6F3EB;
+
+  color: #3D825E;
+
+  border:
+    1px solid #C9E4D4;
+}
+
+
+/* WARNING */
+
+.badge-amber,
+.status-warning {
+  background: #FAF1DD;
+
+  color: #9A702A;
+
+  border:
+    1px solid #EBDCB8;
+}
+
+
+/* NORMAL / INFORMATION */
+
+.badge-cyan,
+.status-info {
+  background: #E4D8F0;
+
+  color: #4E3B72;
+
+  border:
+    1px solid #D4C3E4;
+}
+
+
+.badge {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 0.3rem;
+
+  padding:
+    0.22rem
+    0.55rem;
+
+  border-radius: 999px;
+
+  font-size: 0.67rem;
+
+  font-weight: 600;
+
+  line-height: 1.2;
+
+  text-transform: none;
+}
+
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+input,
+select,
+textarea {
+  color: var(--text-primary);
+
+  background: #FDFCFE;
+
+  border:
+    1px solid #DDD4E6;
+
+  border-radius: 8px;
+
+  font-weight: 400;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+
+  border-color: #8066A1;
+
+  box-shadow:
+    0 0 0 2px
+    rgba(128, 102, 161, 0.10);
+}
+
+
+/* =========================================================
+   PLACEHOLDER
+========================================================= */
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-muted);
+
+  font-family: var(--font-main);
+
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+table,
+th,
+td {
+  font-family: var(--font-main);
+
+  letter-spacing: 0;
+}
+
+table {
+  color: var(--text-primary);
+}
+
+thead {
+  color: #3D2C63;
+}
+
+th {
+  font-weight: 600;
+}
+
+td {
+  font-weight: 400;
+}
+
+tbody tr:hover {
+  background:
+    rgba(96, 75, 134, 0.04);
+}
+
+
+/* =========================================================
+   MODAL
+========================================================= */
+
+.modal-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  background:
+    rgba(29, 10, 70, 0.50);
+
+  backdrop-filter: blur(4px);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  z-index: 1000;
+
+  padding: 1rem;
+}
+
+
+/* =========================================================
+   MAP
+========================================================= */
+
+.leaflet-container {
+  width: 100%;
+
+  height: 100%;
+
+  border-radius: 12px;
+
+  border:
+    1px solid #DED4E8;
+
+  font-family:
+    var(--font-main) !important;
+}
+
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C9BDD3;
+
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #AE9CBB;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+  .content-area {
+    padding: 1.3rem;
+  }
+}
+
+
+@media (max-width: 750px) {
+  .content-area {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+}
+
+/* =========================================================
+   HEADER - LIGHT + DARK MODE FIX
+========================================================= */
+
+.page-header h1,
+.page-header h2,
+.page-header h3,
+.page-header .header-title {
+  color: var(--text-primary) !important;
+}
+
+.page-header p,
+.page-header .header-subtitle {
+  color: var(--text-secondary) !important;
+}
+
+
+/* DARK MODE HEADER */
+
+[data-theme="dark"] .page-header h1,
+[data-theme="dark"] .page-header h2,
+[data-theme="dark"] .page-header h3,
+[data-theme="dark"] .page-header .header-title {
+  color: #F7F2FA !important;
+}
+
+[data-theme="dark"] .page-header p,
+[data-theme="dark"] .page-header .header-subtitle {
+  color: #C8BDCF !important;
+}

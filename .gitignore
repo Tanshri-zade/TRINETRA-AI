@@ -1,0 +1,26 @@
+# Dependencies
+**/node_modules/
+
+# Environment secrets
+**/.env
+**/.env.*
+**/config.env
+**/config/config.env
+
+# Python generated files
+**/__pycache__/
+**/*.pyc
+**/venv/
+**/.venv/
+
+# Build files
+**/dist/
+**/build/
+
+# Local database files
+**/*.sqlite3
+**/*.db
+
+# System files
+.DS_Store
+Thumbs.db
